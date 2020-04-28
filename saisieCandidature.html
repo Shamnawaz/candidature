@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Exercice 8</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+
+        <fieldset>
+            <legend>Formulaire de candidature pour un poste de développeur PHP</legend>
+            <form action="recapitulation.php" method="GET" name="formulaire" >
+				<label><strong>Civilité :</strong></label>
+				</br>
+					<select name="Civilité" size="2" multiple>
+						<option value="M.">M.</option>
+						<option value="Mme.">Mme</option>
+					</select>
+				</br>	
+                <label><strong>Nom :</strong></label>
+                    <input type="text" name="nom" placeholder="Saisir votre nom" required>
+                <label><strong>Prenom :</strong></label>
+                    <input type="text" name="prenom" placeholder="Saisir votre prenom" required>
+                <br/>
+                <label><strong>Date de naissance :</strong></label>
+                    <input type="text" name="date" placeholder="Saisir votre date de naissance" required>
+                <br/>
+                <label><strong>Numéro de télephone</strong>Numéro de téléphone :</label>
+                    <input type="text" name="tel" placeholder="Saisir votre numéro de télépĥone" required>
+                <br/>
+                <label><strong>Adresse mail :</strong></label>
+                    <input type="text" name="email" placeholder="Saisir votre adresse mail" required>
+                <br/>
+                <label><strong>Votre niveau en PHP</strong></label>
+                <br/>
+                <select name="niveau" size="4" multiple>
+                     <option value="débutant">Débutant</option> 
+                     <option value="moyen">Moyen</option>
+                     <option value="bon">Bon</option>
+                     <option value="excellent">Excellent</option> 
+                </select>
+                <br/>
+                <label><strong>Frameworks PHP déjà acquis</strong></label>
+                
+                    <input type="text" name="frameworks" placeholder="Saisir les frameworks PHP déjà pratiqués" />
+                    <br/>
+                    <input type="checkbox" name="frameworks[]" value="Symfony" /> Symfony 
+					<input type="checkbox" name="frameworks[]" value="CodeIgniter" /> CodeIgniter 
+					<input type="checkbox" name="frameworks[]" value="FuelPHP" /> FuelPHP 
+					<input type="checkbox" name="frameworks[]" value="CakePHP" /> CakePHP 
+					<input type="checkbox" name="frameworks[]" value="Laravel" /> Laravel 
+                <br/>
+                
+                <textarea name="commentaire" rows="8" cols="45">
+                    Présentation de votre parcours
+                </textarea>
+<br/>
+            <input type="submit" value="Valider" />
+            <br/>
+            <input type="reset" value="Annuler" />
+
+
+
+            </form>
+
+
+        </fieldset>
+
+    </body>
+
+</html>
